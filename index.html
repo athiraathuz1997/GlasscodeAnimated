@@ -24,23 +24,23 @@
                 <nav class="container navbar">
                     <div class="container navbar">
                         <div class="container-nav flex">
-                            <!-- <a href="/" class="navbar-logo"><img src="Images/logo.png" alt="" srcset=""></a> -->
+                            <a href="/" class="navbar-logo"><img src="Images/glassCode.jpeg" alt="" srcset="" style="width: 50%; height: 100%;"></a>
                             <button onclick="openNav()" class="navbar-toggler" type="button">
                                 <span class="fa-solid fa-bars"></span>
                             </button>
                             <ul class="navbar-nav flex">
-                                <li><a href="/" class="nav-link active">Home</a></li>
-                                <li><a href="/" class="nav-link">About</a></li>
-                                <li><a href="/" class="nav-link">Contact</a></li>
+                                <li><a href="#home" class="nav-link active">Home</a></li>
+                                <li><a href="#about" class="nav-link">About</a></li>
+                                <li><a href="#contact" class="nav-link">Contact</a></li>
                                 <li class="dropdown">
                                     <a href="/" class="nav-link dropdown-toggle">Pages</a>
                                     <ul class="dropdown-menu">
                                         <!-- <li><a href="/" class="dropdown-item">Services</a></li> -->
-                                        <!-- <li><a href="/" class="dropdown-item">Pricing Plan</a></li> -->
-                                        <li><a href="/" class="dropdown-item">Porfolio</a></li>
-                                        <li><a href="/" class="dropdown-item">Services</a></li>
-                                        <li><a href="/" class="dropdown-item">Experience</a></li>
-                                        <li><a href="/" class="dropdown-item">Work</a></li>
+                                        <!-- <li><a href="/" class="dropdown-item"></a></li> -->
+                                        <li><a href="#portfolio" class="dropdown-item">Porfolio</a></li>
+                                        <li><a href="#services" class="dropdown-item">Services</a></li>
+                                        <li><a href="#experience" class="dropdown-item">Experience</a></li>
+                                        <li><a href="#work" class="dropdown-item">Work</a></li>
                                         <!-- <li><a href="/" class="dropdown-item">FAQ</a></li> -->
                                         <li><a href="/" class="dropdown-item">Coming Soon</a></li>
                                         <!-- <li><a href="/" class="dropdown-item">Blog</a></li> -->
@@ -58,32 +58,32 @@
                 </nav>
                 <aside id="mySidepanel" class="sidepanel">
                     <div class="sidebar flex">
-                        <a href="/"><img src="Images/logo.png" alt="" srcset=""></a>
+                        <a href="/"><img src="Images/glassCode.jpeg" alt="" srcset="" style="width: 50%; height: 100%;"></a>
                         <button onclick="closeNav()" type="button" class="closebtn btn_hover1">
                             <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>
                     <div>
                         <ul>
-                            <li><a href="http://" class="nav-link active">Home</a></li>
-                            <li><a href="http://" class="nav-link ">About</a></li>
-                            <li><a href="http://" class="nav-link ">Contact</a></li>
-                            <li class="pages"><a href="http://" class="nav-link ">More</a></li>
+                            <li><a href="#home" class="nav-link active">Home</a></li>
+                            <li><a href="#about" class="nav-link ">About</a></li>
+                            <li><a href="#contact" class="nav-link ">Contact</a></li>
+                            <li class="pages"><a href="" class="nav-link ">More</a></li>
                             <li class="collapse-btn">
                                 <a href="" class="nav-link plus_collapse" data-bs-collapse="collapse">
                                     <i class="fa-solid fa-plus"></i>
                                 </a>
                                 <div class="collapse" id="pages">
                                     <ul>
-                                        <li><a href="" class="nav-link">Services</a></li>
-                                        <li><a href="/" class="nav-link">Pricing Plan</a></li>
-                                        <li><a href="/" class="nav-link">Porfolio</a></li>
-                                        <li><a href="/" class="nav-link">Team</a></li>
-                                        <li><a href="/" class="nav-link">Testimonials</a></li>
-                                        <li><a href="/" class="nav-link">FAQ</a></li>
+                                        <li><a href="#services" class="nav-link">Services</a></li>
+                                        <!-- <li><a href="/" class="nav-link">Pricing Plan</a></li> -->
+                                        <li><a href="#portfolio" class="nav-link">Porfolio</a></li>
+                                        <!-- <li><a href="/" class="nav-link">Team</a></li> -->
+                                        <!-- <li><a href="/" class="nav-link">Testimonials</a></li> -->
+                                        <li><a href="#experience" class="nav-link">Experience</a></li>
+                                        <li><a href="#work" class="nav-link">Work</a></li>
                                         <li><a href="/" class="nav-link">Coming Soon</a></li>
-                                        <li><a href="/" class="nav-link">Blog</a></li>
-                                        <li><a href="/" class="nav-link">404</a></li>
+                                        <!-- <li><a href="/" class="nav-link">404</a></li> -->
                                     </ul>
                                 </div>
                             </li>
@@ -102,7 +102,7 @@
 
                 <section class="header-right-sidebar" id="right_side">
                     <div class="flex flex-sb">
-                        <a href="http://"><img src="Images/right-side-logo.png" alt="" srcset=""></a>
+                        <a href="http://"><img src="Images/glassCode.jpeg" alt="" srcset="" style="width: 50%; height: 100%;"></a>
                         <button class="close_rightsidebar fa-solid fa-xmark"></button>
                     </div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -134,7 +134,7 @@
                     </span>
                 </section>
             </header>
-            <section class="hero">
+            <section class="hero" id="home">
                 <div class="container" data-aos="zoom-in">
                     <div>
                         <div class="hero-social-icon flex">
@@ -247,7 +247,7 @@
                 <hr class="hr2">
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="about-data flex-sb">
                     <div class="w-50" data-aos="fade-up">
@@ -297,7 +297,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="portfolio-1">
                 <div class="container">
                     <div class="porto-center" data-aos="fade-up">
@@ -547,7 +547,7 @@
         </section>
 
         <!-- Service Section -->
-        <section class="service">
+        <section class="service" id="service">
             <div class="service-1">
                 <div class="container">
                     <div class="service-data" data-aos="fade-down">
@@ -592,7 +592,7 @@
                 </div>
             </div>
         </section>
-        <section class="experience">
+        <section class="experience" id="experience">
             <div class="container">
                 <div class="flex flex-wrap exp-center" data-aos="fade-up">
                     <div class="w-66">
@@ -658,7 +658,7 @@
                 </div>
             </div>
         </section>
-        <section class="work">
+        <section class="work" id="work">
             <div class="container p-relative">
                 <div class="work-para text-center" data-aos="fade-up">
                     <h5>
@@ -885,7 +885,7 @@
         </section> -->
     </div>
     <!-- Footer section -->
-    <footer>
+    <footer id="contact">
         <div class="container">
             <div class="footer-hr flex flex-col">
                 <div class="flex gap-1" data-aos="fade-left">
@@ -907,8 +907,8 @@
             <div class="container">
                 <div class="flex flex-start footer-center">
                     <div class="w-33 flex flex-col gap-2 flex-start">
-                        <p>LOGO</p>
-                        <!-- <a href="http://"><img src="Images/logo.png" alt="footer-logo" srcset=""></a> -->
+                        <!-- <p>LOGO</p> -->
+                        <a href="http://"><img src="Images/glassCode.jpeg" alt="footer-logo" srcset=""></a>
                         <p>Harnessing our expertise in web design, mobile applications, custom software, and specialized
                             ERP & CRM solutions, we empower businesses
                             to thrive in the digital landscape with efficiency and innovation at the forefront.</p>

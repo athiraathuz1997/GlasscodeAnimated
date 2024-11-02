@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlassCode</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/easy.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="shortcut icon" href="Images/fave_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="site-wrapper">
+        <div class="header-index">
+            <header>
+                <nav class="container navbar">
+                    <div class="container navbar">
+                        <div class="container-nav flex">
+                            <!-- <a href="/" class="navbar-logo"><img src="Images/logo.png" alt="" srcset=""></a> -->
+                            <button onclick="openNav()" class="navbar-toggler" type="button">
+                                <span class="fa-solid fa-bars"></span>
+                            </button>
+                            <ul class="navbar-nav flex">
+                                <li><a href="/" class="nav-link active">Home</a></li>
+                                <li><a href="/" class="nav-link">About</a></li>
+                                <li><a href="/" class="nav-link">Contact</a></li>
+                                <li class="dropdown">
+                                    <a href="/" class="nav-link dropdown-toggle">Pages</a>
+                                    <ul class="dropdown-menu">
+                                        <!-- <li><a href="/" class="dropdown-item">Services</a></li> -->
+                                        <!-- <li><a href="/" class="dropdown-item">Pricing Plan</a></li> -->
+                                        <li><a href="/" class="dropdown-item">Porfolio</a></li>
+                                        <li><a href="/" class="dropdown-item">Services</a></li>
+                                        <li><a href="/" class="dropdown-item">Experience</a></li>
+                                        <li><a href="/" class="dropdown-item">Work</a></li>
+                                        <!-- <li><a href="/" class="dropdown-item">FAQ</a></li> -->
+                                        <li><a href="/" class="dropdown-item">Coming Soon</a></li>
+                                        <!-- <li><a href="/" class="dropdown-item">Blog</a></li> -->
+                                        <!-- <li><a href="/" class="dropdown-item">404</a></li> -->
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-right flex">
+                            <p>Call Us : <span>+971 231456789</span></p>
+                            <i onclick="open_search()" class="fa-solid fa-magnifying-glass"></i>
+                            <!-- <i class="fa-solid fa-bars"></i> -->
+                        </div>
+                    </div>
+                </nav>
+                <aside id="mySidepanel" class="sidepanel">
+                    <div class="sidebar flex">
+                        <a href="/"><img src="Images/logo.png" alt="" srcset=""></a>
+                        <button onclick="closeNav()" type="button" class="closebtn btn_hover1">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="http://" class="nav-link active">Home</a></li>
+                            <li><a href="http://" class="nav-link ">About</a></li>
+                            <li><a href="http://" class="nav-link ">Contact</a></li>
+                            <li class="pages"><a href="http://" class="nav-link ">More</a></li>
+                            <li class="collapse-btn">
+                                <a href="" class="nav-link plus_collapse" data-bs-collapse="collapse">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                                <div class="collapse" id="pages">
+                                    <ul>
+                                        <li><a href="" class="nav-link">Services</a></li>
+                                        <li><a href="/" class="nav-link">Pricing Plan</a></li>
+                                        <li><a href="/" class="nav-link">Porfolio</a></li>
+                                        <li><a href="/" class="nav-link">Team</a></li>
+                                        <li><a href="/" class="nav-link">Testimonials</a></li>
+                                        <li><a href="/" class="nav-link">FAQ</a></li>
+                                        <li><a href="/" class="nav-link">Coming Soon</a></li>
+                                        <li><a href="/" class="nav-link">Blog</a></li>
+                                        <li><a href="/" class="nav-link">404</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <div id="search-bar">
+                    <div onclick="close_search()" class="btn_hover1">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <form action="#" method="search">
+                        <input type="search" name="" id="" required placeholder="Search">
+                        <button type="submit" class="btn_hover1">Search</button>
+                    </form>
+                </div>
+
+                <section class="header-right-sidebar" id="right_side">
+                    <div class="flex flex-sb">
+                        <a href="http://"><img src="Images/right-side-logo.png" alt="" srcset=""></a>
+                        <button class="close_rightsidebar fa-solid fa-xmark"></button>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's
+                        standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book.</p>
+                    <a href="http://" class="btn_hover1">Discover More</a>
+                    <hr>
+                    <h4>Connect details</h4>
+                    <ul class="flex">
+                        <li>
+                            <a href="http://"><i class="fa-solid fa-phone"></i></a>
+                            <a href="http://">+123-456-7890</a>
+                        </li>
+                        <li>
+                            <a href="http://"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="http://" class="text-lowercase">Yourname@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="http://"><i class="fa-solid fa-regular fa-clock"></i></a>
+                            <a href="http://">Office Hours: 8AM - 11AM Sunday - Weekend Day</a>
+                        </li>
+                    </ul>
+                    <span class="flex">
+                        <a href="http://"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="http://"><i class="fa-brands fa-linkedin"></i></a>
+                    </span>
+                </section>
+            </header>
+            <section class="hero">
+                <div class="container" data-aos="zoom-in">
+                    <div>
+                        <div class="hero-social-icon flex">
+                            <a href="http://"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="http://"><i class="fa-brands fa-twitter"></i></a>
+                            <hr>
+                        </div>
+                        <div class="center-data flex flex-col gap-1">
+                            <h1>DESIGN AND DEVELOP</h1>
+                            <h3>ELEVATING WEB AESTHETICS</h3>
+                            <div class="center-btn flex gap-1 mt-1">
+                                <a href="/" class="btn_hover1">Get Started</a>
+                                <a href="/" class="btn_hover2">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="feature">
+            <div class="container">
+                <div class="flex">
+                    <div class="header-card" data-aos="fade-up">
+                        <div>
+                            <figure>
+                                <img src="Images/icon/feature1.png" alt="" srcset="">
+                            </figure>
+                            <h4>Personalized Solutions</h4>
+                            <p>We provide personalized Solutions that align with your specific requirements, ensuring
+                                seamless integration and maximized efficiency.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header-card" data-aos="fade-down">
+                        <div>
+                            <figure>
+                                <img class="figure_img1" src="Images/icon/feature2.png" alt="" srcset="">
+                            </figure>
+                            <h4>Outcome-Oriented Approach</h4>
+                            <p>This approach ensures every solution we provide is designed to deliver
+                                measurable results and sustainable growth for your business.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header-card" data-aos="fade-up">
+                        <div>
+                            <figure>
+                                <img src="Images/icon/feature3.png" alt="" srcset="">
+                            </figure>
+                            <h4>Innovative Solutions</h4>
+                            <p>Our team leverages creativity and fresh perspectives to tackle complex challenges,
+                                ensuring that our solutions not only stand out but also drive measurable success for
+                                your business
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header-card" data-aos="fade-down">
+                        <div>
+                            <figure>
+                                <img src="Images/icon/feature4.png" alt="" srcset="">
+                            </figure>
+                            <h4>Professional Team</h4>
+                            <p>omprising industry veterans and subject matter experts, our team collaborates seamlessly
+                                to tackle challenges and deliver innovative solutions tailored to your specific needs
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="logoipsum">
+            <div class="container">
+                <div class="flex flex-col gap-2">
+                    <hr class="hr1">
+                    <h3 class="mb-15" data-aos="zoom-in">QMX</h3>
+                    <h4 class="qmxStyle" data-aos="zoom-in">Introducing QMX: A revolutionary SAAS for Tubular Inspection
+                        and Lifting Equipment</h4>
+                </div>
+                <div class="logoipsum-slider mt-3">
+                    <p class="qmxsubStyle" data-aos="fade-down">
+                        Are your inspectors still relying on manual reporting, or is your current software falling short
+                        of expectations?
+                        Let us introduce you to the capabilities of QMX.QMX stands as a comprehensive, all-in-one
+                        Software as a Service (SAAS)
+                        solution designed for Tubular Inspection and Lifting Equipment. Consisting of a desktop
+                        application and a web portal,
+                        QMX allows for seamless data collection both offline and online, ensuring accessibility for
+                        various stakeholders at any given time.
+                        Boasting user-friendliness and cost-effectiveness, QMX transforms the landscape of asset and
+                        report management.
+                        <br><br>
+                        With QMX, analyzing historical and current data becomes as simple as a click of a button. Gain
+                        insights into trends, patterns, and potential outcomes effortlessly. Our system guarantees
+                        compliance with relevant industry regulations and standards, minimizing manual errors and
+                        elevating productivity and efficiency. QMX isn't just a software solution; it's a competitive
+                        advantage. It positions you ahead of competitors by offering a level of customization that is
+                        not only extensive but also affordable. Book a demo with us to discover how QMX can enhance your
+                        clients' experiences and revolutionize your inspection and equipment management processes.
+                    </p>
+                </div>
+                <!-- <div class="logoipsum-slider sliderlogo" data-aos="zoom-in">
+                    <figure><img src="Images/home/logoipsum1.svg" alt="" srcset=""></figure>
+                    <figure><img src="Images/home/logoipsum2.svg" alt="" srcset=""></figure>
+                    <figure><img src="Images/home/logoipsum3.svg" alt="" srcset=""></figure>
+                    <figure><img src="Images/home/logoipsum4.svg" alt="" srcset=""></figure>
+                    <figure><img src="Images/home/logoipsum5.svg" alt="" srcset=""></figure>
+                    <figure><img src="Images/home/logoipsum6.svg" alt="" srcset=""></figure>
+                </div> -->
+                <hr class="hr2">
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about-data flex-sb">
+                    <div class="w-50" data-aos="fade-up">
+                        <div class="flex about-title gap-1">
+                            <hr>
+                            <h5>ABOUT US</h5>
+                        </div>
+                        <h2>Discover Our Services to Elevate Your Digital Impact</h2>
+                        <p>
+                            At Glass Code Technologies, we deliver innovative tech solutions with a commitment to
+                            honesty and excellence,
+                            helping businesses thrive. Specializing in the Oil and Gas sector, we combine advanced
+                            technology with
+                            a client-focused approach to bring ideas to life.</p>
+                        <div class="flex gap-1 mt-1">
+                            <i class="fa-solid fa-check"></i>
+                            <h5>User-friendly solutions and reliable support to elevate your business
+                            </h5>
+                        </div>
+                        <div class="flex gap-1 mt-1">
+                            <i class="fa-solid fa-check"></i>
+                            <h5>Your trusted digital partner across the GCC</h5>
+                        </div>
+                        <!-- <div class="flex mt-3 gap-2">
+                            <a href="" class="btn_hover1">Get Started</a>
+                            <a href="" class="btn_hover2">Discover More</a>
+                        </div> -->
+                    </div>
+                    <div class="w-50 about-imgs flex flex-center" data-aos="fade-down">
+                        <div>
+                            <figure>
+                                <img src="Images/home/aboutimg.jpg" alt="" srcset="">
+                            </figure>
+                        </div>
+                        <div class="ab-count flex flex-center">
+                            <div class="flex flex-center">
+                                <h2>5</h2>
+                                <h2>+</h2>
+                            </div>
+                            <p>Year of experience</p>
+                        </div>
+                        <div class="about-hr flex gap-1">
+                            <hr>
+                            <h6>Who we are</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="portfolio-1">
+                <div class="container">
+                    <div class="porto-center" data-aos="fade-up">
+                        <div class="w-50">
+                            <div class="flex gap-1">
+                                <hr class="gallary-hr1">
+                                <h5>PORTFOLIO</h5>
+                            </div>
+                            <h2 class="mt-1">Our Latest Projects</h2>
+                            <p>Explore our latest projects that showcase our innovative solutions and commitment to
+                                excellence</p>
+                        </div>
+                        <div class="flex w-100 flex-end">
+                            <a href="/" class="btn_hover2">View All Projects</a>
+                        </div>
+                        <hr class="mt-3">
+                    </div>
+                </div>
+            </div>
+            <div class="gallary">
+                <div class="ga-bg">
+                    <span></span>
+                    <div class="container" data-aos="fade-up">
+                        <div class="tab mt-15" style="padding-top: 30px; padding-bottom: 25px;">
+                            <button class="tablinks active" onclick="open_img(event,'all')">All</button>
+                            <button class="tablinks" onclick="open_img(event,'design')">WEB DESIGN</button>
+                            <button class="tablinks" onclick="open_img(event,'development')">WEB DEVELOPMENT</button>
+                            <button class="tablinks" onclick="open_img(event,'branding')">MOBILE APPLICATION</button>
+                            <button class="tablinks" onclick="open_img(event,'ui_ux')">ERP & CRM</button>
+                            <button class="tablinks" onclick="open_img(event,'marketing')">CUSTOM SOFTWARE</button>
+                            <!-- <button class="tablinks" onclick="open_img(event,'seo')">SEO</button> -->
+                        </div>
+                        <div id="all" class="tabcontent" style="display: block;">
+                            <div class="flex flex-center">
+                                <div class="flex w-100">
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/all-gallary-1.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/all-gallary-2.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/all-gallary-3.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-66">
+                                        <figure>
+                                            <img src="Images/home/all-gallary-4.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/all-gallary-5.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/all-gallary-6.png" alt="sm_img" srcset="">
+                                        </figure>
+                                        <figure>
+                                            <img src="Images/home/all-gallary-7.png" alt="sm_img" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-66">
+                                        <figure>
+                                            <img src="Images/home/all-gallary-8.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="design" class="tabcontent">
+                            <div class="flex flex-center">
+                                <div class="flex w-100">
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/design-gallary-3.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/design-gallary-6.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/design-gallary-7.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/design-gallary-1.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/design-gallary-2.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/design-gallary-4.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="development" class="tabcontent">
+                            <div class="flex flex-center">
+                                <div class="flex w-100">
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/dev-gallary-3.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/dev-gallary-4.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/dev-gallary-5.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/dev-gallary-6.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/dev-gallary-7.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/dev-gallary-8.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="branding" class="tabcontent">
+                            <div class="flex flex-center">
+                                <div class="flex w-100">
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/brand-gallary-6.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-66">
+                                        <figure>
+                                            <img src="Images/home/brand-gallary-8.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ui_ux" class="tabcontent">
+                            <div class="flex flex-center">
+                                <div class="flex w-100">
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/ui-ux-gallary-3.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-66">
+                                        <figure>
+                                            <img src="Images/home/ui-ux-gallary-4.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div id="marketing" class="tabcontent">
+                            <div class="flex flex-center">
+                                <div class="flex w-100">
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/market-gallary-1.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-66">
+                                        <figure>
+                                            <img src="Images/home/market-gallary-2.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-66">
+                                        <figure>
+                                            <img src="Images/home/market-gallary-3.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/market-gallary-4.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="seo" class="tabcontent">
+                            <div class="flex flex-center">
+                                <div class="flex w-100">
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/seo-gallary-4.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/seo-gallary-5.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/seo-gallary-6.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-66">
+                                        <figure>
+                                            <img src="Images/home/seo-gallary-7.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                    <div class="w-33">
+                                        <figure>
+                                            <img src="Images/home/seo-gallary-8.png" alt="" srcset="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="gallary-hr flex flex-end gap-1 mt-1">
+                            <h6>Creative Solution</h6>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Section -->
+        <section class="service">
+            <div class="service-1">
+                <div class="container">
+                    <div class="service-data" data-aos="fade-down">
+                        <div class="w-66">
+                            <div class="flex gap-1">
+                                <hr class="service_hr1">
+                                <h5>SERVICES</h5>
+                            </div>
+                            <h2 class="mt-1">Services we offer</h2>
+                            <p class="mt-1">Discover the diverse range of services we offer to help your business
+                                succeed.</p>
+                        </div>
+                        <div class="w-33 mt-1 flex flex-end">
+                            <a href="http://" class="btn_hover2">View all Services</a>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="flex s-card gap-1">
+                        <div class="service-card" data-aos="fade-down">
+                            <figure><img src="Images/icon/slider1.png" alt="slider1" srcset=""></figure>
+                            <h3>UI/UX Design</h3>
+                            <p>Transform your digital experience with our user-centered UI/UX design services that
+                                prioritize both aesthetics and functionality</p>
+                            <a href="/">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card" data-aos="fade-up">
+                            <figure><img src="Images/icon/slider2.png" alt="slider2" srcset=""></figure>
+                            <h3>Development</h3>
+                            <p>Leverage our development expertise to create robust, scalable solutions tailored to your
+                                business needs</p>
+                            <a href="/">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card" data-aos="fade-down">
+                            <figure><img src="Images/icon/slider3.png" alt="slider3" srcset=""></figure>
+                            <h3>Mobile Application</h3>
+                            <p>Bring your brand to life with our captivating visual design services that create a
+                                lasting impression."
+                            </p>
+                            <a href="/">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="experience">
+            <div class="container">
+                <div class="flex flex-wrap exp-center" data-aos="fade-up">
+                    <div class="w-66">
+                        <div class="flex gap-1">
+                            <hr class="exp-hr1 m-0">
+                            <h5>Experience</h5>
+                        </div>
+                        <h2>Grow Your Online Presence</h2>
+                        <p>Enhance your online presence with our expertise and strategies designed to drive engagement
+                            and growth.</p>
+                    </div>
+                    <div class="w-33 mt-3 flex flex-end">
+                        <a href="http://" class="btn_hover1"> Get Started</a>
+                    </div>
+                    <div class="flex flex-sb">
+                        <div class="w-50 p-relative flex flex-center" data-aos="zoom-in">
+                            <div class="experience_mask">
+                                <figure>
+                                    <img src="Images/home/exp.png" alt="" srcset="" style="width: 90%; height: 90%;">
+                                </figure>
+                            </div>
+                            <div class="experience-hr flex gap-1">
+                                <hr>
+                                <h6> Our Expertise </h6>
+                            </div>
+                        </div>
+                        <div class="w-50 flex flex-col gap-2 mt-15">
+                            <div class="flex gap-1 ex-card" data-aos="fade-up">
+                                <div class="flex flex-center">
+                                    <h3>90</h3>
+                                    <h3>%</h3>
+                                </div>
+                                <div>
+                                    <h4>Creative Approach</h4>
+                                    <p>Our creative approach combines innovative thinking and strategic insights to
+                                        deliver unique solutions that stand out in the digital landscape.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-1 mt-1 ex-card" data-aos="fade-up" data-aos-delay="300">
+                                <div class="flex flex-center">
+                                    <h3>99</h3>
+                                    <h3>%</h3>
+                                </div>
+                                <div>
+                                    <h4>Guaranteed Success</h4>
+                                    <p>Our commitment to excellence ensures guaranteed success, empowering your business
+                                        to achieve its goals.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-1 mt-1 ex-card" data-aos="fade-up" data-aos-delay="400">
+                                <div class="flex flex-center">
+                                    <h3>85</h3>
+                                    <h3>%</h3>
+                                </div>
+                                <div>
+                                    <h4>Brand Strategy</h4>
+                                    <p>Craft a powerful brand strategy that resonates with your audience and drives
+                                        meaningful connections.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work">
+            <div class="container p-relative">
+                <div class="work-para text-center" data-aos="fade-up">
+                    <h5>
+                        HOW WE work
+                    </h5>
+                    <h2 class="mt-1">Our Process for Delivering Results</h2>
+                    <p class="mt-1">Our streamlined process ensures efficient collaboration and effective execution,
+                        delivering results that exceed your expectations</p>
+                </div>
+                <div class="work-hr flex gap-1">
+                    <hr>
+                    <h6>Projects in steps</h6>
+                </div>
+                <div class="work-line flex flex-center gap-1 flex-wrap p-relative">
+                    <div data-aos="zoom-in">
+                        <h2>0.1</h2>
+                        <h4>Make an Appoinment</h4>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <h2>0.2</h2>
+                        <h4>Meet Our Team</h4>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <h2>0.3</h2>
+                        <h4>Get Consultation</h4>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <h2>0.4</h2>
+                        <h4>Start Projects</h4>
+                    </div>
+                </div>
+                <div class="flex flex-center" data-aos="zoom-in">
+                    <a href="http://" class="btn_hover2">Contact Now</a>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="team">
+            <div class="container">
+                <div class="flex team-center" data-aos="fade-up">
+                    <div class="w-66">
+                        <div class="flex gap-1">
+                            <hr class="team-hr1">
+                            <h5>Our Team</h5>
+                        </div>
+                        <h2 class="mt-1">Meet Our Team of Proffessionals</h2>
+                        <p class="mt-1">Get to know our team of professionals dedicated to delivering exceptional
+                            solutions and driving your success.</p>
+                    </div>
+                    <div class="w-33 mt-1 flex flex-end">
+                        <a href="http://" class="btn_hover2">All Members</a>
+                    </div>
+                </div>
+                <div class="team-slider flex mt-1" data-aos="fade-right" data-aos-delay="400">
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider1.png" alt="avatar" srcset="">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Jane Doe</h3>
+                                <h4>Designer</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="http://"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="http://"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider2.png" alt="avatar" srcset="">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Katti Pairi</h3>
+                                <h4>Seo expert</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="http://"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="http://"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider3.png" alt="avatar" srcset="">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Jonny Coll</h3>
+                                <h4>Developer</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="http://"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="http://"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider4.png" alt="avatar" srcset="">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Jonny Coll</h3>
+                                <h4>UI / UX</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="http://"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="http://"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider1.png" alt="avatar" srcset="">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Jane Doe</h3>
+                                <h4>Designer</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="http://"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="http://"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider2.png" alt="avatar" srcset="">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Katti Pairi</h3>
+                                <h4>Seo expert</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="http://"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="http://"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider3.png" alt="avatar" srcset="">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Jonny Coll</h3>
+                                <h4>Developer</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="http://"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="http://"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider4.png" alt="avatar" srcset="">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Jonny Coll</h3>
+                                <h4>UI / UX</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="http://"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="http://"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-btn" data-aos="zoom-in">
+                <div class="container flex flex-sb gap-2 flex-wrap">
+                    <h4>Ask A Question To Our Amazing Team, And Get, Responsive Quikly.</h4>
+                    <a href="http://" class="btn_hover2">Contact Now</a>
+                </div>
+            </div>
+
+        </section>
+        <section class="pricing p-relative">
+            <span></span>
+            <div class="pricing-hr flex-gap-1 mt-3">
+                <hr>
+                <h6>Pricing Plans</h6>
+            </div>
+            <div class="container">
+                <div class="text-center" data-aos="fade-down">
+                    <h5>PRICING</h5>
+                    <h2 class="mt-1">Pricing Plans</h2>
+                    <p class="mt-1 mb-1">Explore our flexible pricing plans designed to fit your budget while
+                        delivering maximum value."
+                    </p>
+                </div>
+                <div class="pricing-card flex gap-1 mt-3 text-center">
+                    <div class="flex flex-col gap-2" data-aos="fade-up">
+                        <h3>BASIC</h3>
+                        <h2>#24</h2>
+                        <h6>SEO Audits</h6>
+                        <h6>SEO Managmennt</h6>
+                        <h6>Digital marketing</h6>
+                        <h6>Site Management</h6>
+                        <a href="http://" class="btn_hover1">Get Started</a>
+                    </div>
+                    <div class="flex flex-col gap-2" data-aos="fade-down">
+                        <h3>STANDARD</h3>
+                        <h2>#594</h2>
+                        <h6>SEO Audits</h6>
+                        <h6>SEO Managmennt</h6>
+                        <h6>Digital marketing</h6>
+                        <h6>Site Management</h6>
+                        <a href="http://" class="btn_hover1">Get Started</a>
+                    </div>
+                    <div class="flex flex-col gap-2" data-aos="fade-up">
+                        <h3>PREMIUM</h3>
+                        <h2>#99</h2>
+                        <h6>SEO Audits</h6>
+                        <h6>SEO Managmennt</h6>
+                        <h6>Digital marketing</h6>
+                        <h6>Site Management</h6>
+                        <a href="http://" class="btn_hover1">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </div>
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <div class="footer-hr flex flex-col">
+                <div class="flex gap-1" data-aos="fade-left">
+                    <hr>
+                    <h6>Newsletter</h6>
+                </div>
+                <h3>JOIN OUR MAILING LIST</h3>
+                <p class="text-center">Sign up for our mailing list to stay updated on the latest news, insights, and
+                    exclusive offers."
+                </p>
+            </div>
+            <form action="#" id="footer-form" class="flex flex-sb gap-2" data-aos="zoom-in" data-aos-delay="400">
+                <div id="footer-message"></div>
+                <input type="email" name="" id="" required placeholder="Enter Your Mail">
+                <button type="submit" class="btn_hover1">Get Started</button>
+            </form>
+        </div>
+        <div class="footer-menu">
+            <div class="container">
+                <div class="flex flex-start footer-center">
+                    <div class="w-33 flex flex-col gap-2 flex-start">
+                        <p>LOGO</p>
+                        <!-- <a href="http://"><img src="Images/logo.png" alt="footer-logo" srcset=""></a> -->
+                        <p>Harnessing our expertise in web design, mobile applications, custom software, and specialized
+                            ERP & CRM solutions, we empower businesses
+                            to thrive in the digital landscape with efficiency and innovation at the forefront.</p>
+                        <span class="flex gap-2">
+                            <a href="http://"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="http://"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="http://"><i class="fa-brands fa-linkedin"></i></a>
+                        </span>
+                    </div>
+                    <div class="w-16 mt-1">
+                        <h4>Quick Links</h4>
+                        <ul class="flex flex-col gap-2 flex-start">
+                            <li><a href="http://">Home</a></li>
+                            <li><a href="http://">About</a></li>
+                            <li><a href="http://">Porfolio</a></li>
+                            <li><a href="http://">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-16 mt-45 flex-end">
+                        <ul class="flex flex-col gap-2 flex-start">
+                            <li><a href="http://">FAQ</a></li>
+                            <li><a href="http://">Contact</a></li>
+                            <li><a href="http://">Team</a></li>
+                            <li><a href="http://">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-33 mt-1 flex flex-col flex-start">
+                        <h4>Get Connected</h4>
+                        <ul class="flex flex-col gap-2 flex-start">
+                            <li>
+                                <a href="http://"><i class="fa-solid fa-phone"></i></a>
+                                <a href="http://" class="text-lowercase">Info@glasscodetech.com</a>
+                            </li>
+                            <li>
+                                <a href="http://"><i class="fa-regular fa-envelope"></i></a>
+                                <a href="http://">+971 5040 59719</a>
+                            </li>
+                            <li>
+                                <a href="http://"><i class="fa-sharp fa-regular fa-clock"></i></a>
+                                <a href="http://">Office Hours: 8AM - 11PM
+                                    Sunday - Weekend Day
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container flex flex-sb gap-2 flex-wrap">
+                <h6>Copyright &copy; 2024 Coded By <a href="http://" class="p-0">Coder</a></h6>
+                <h6>Powered By <b>Coder</b></h6>
+            </div>
+        </div>
+    </footer>
+
+    <!-- button -->
+    <button onclick="scrollToTop()" id="backToTopBtn" class="btn_hover2"><i
+            class="fa-solid fa-arrow-turn-up"></i></button>
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1250,
+            once: true,
+        });
+    </script>
+
+    <!-- jquery js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery min js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick carousel min js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
